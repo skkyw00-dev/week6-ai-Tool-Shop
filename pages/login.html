@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>登入</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main class="login-container ">
+      <div class="container-lg">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="logo-wrap">
+            <div class="text-center mb-6">
+              <h1 class="fs-3 fs-lg-2 fw-bold mb-2">
+                歡迎回來
+              </h1>
+              <p class="fs-lg-5 text-neutral-200">
+                登入以繼續使用 AI ToolVerse
+              </p>
+            </div>
+            <div class="login-btn d-flex flex-column flex-grow-1 mb-6">
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100 mb-4">
+                <img src="../assets/images/login-google.png" alt="login-google">
+                使用 Google 繼續
+              </button>
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100 mb-4">
+                <img src="../assets/images/login-facebook.png" alt="login-facebook">
+                使用 Facebook 繼續
+              </button>
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100">
+                <img src="../assets/images/login-apple.png" alt="login-apple">
+                使用 Apple 繼續
+              </button>
+            </div>
+            <p class="divider text-neutral-200 fs-sm mb-6">
+              或使用 AI ToolVerse 帳號登入
+            </p>
+            <div class="login-input">
+              <div class="mb-3">
+                <label for="userEmail" class="form-label mb-1">電子信箱</label>
+                <input type="email"
+                  class="form-control text-dark bg-white border border-white border-opacity-12 rounded-3" id="userEmail"
+                  placeholder="請輸入電子信箱">
+              </div>
+
+              <div class="mb-2">
+                <label for="password" class="form-label">密碼</label>
+                <div class="position-relative">
+                  <input 
+                    type="password" 
+                    class="form-control text-dark bg-white border border-white border-opacity-12 rounded-3" 
+                    id="password" value="" 
+                    placeholder="請輸入密碼">
+                  <button type="button" class="password-toggle d-none">
+                    <i class="bi bi-eye-slash"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="mb-2">
+                <label for="password" class="form-label">密碼</label>
+                <div class="input-group">
+                  <input type="password" class="form-control text-dark bg-white border border-white border-opacity-12 rounded-star-3 rounded-end-0" 
+                    placeholder="helloworld@gmail.com"
+                    placeholder="請輸入密碼"
+                    aria-label="password"
+                    id="password"
+                    value="">
+                  <button class="btn bg-white text-dark border-white border-opacity-12 rounded-star-0 rounded-end-3"
+                    type="button">
+                  <i class="bi bi-eye-slash"></i>
+                  </button>
+                </div>
+              </div> -->
+              <div class="d-flex justify-content-between mb-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="fs-sm form-check-label text-neutral-200" for="flexCheckDefault">
+                    記住帳號
+                  </label>
+                </div>
+                <a href="#" class="fs-sm text-primary-200">
+                  忘記密碼？
+                </a>
+              </div>
+              <div class="d-flex flex-column flex-grow-1 mb-6">
+                <button class="btn btn-primary rounded-pill text-dark" type="submit">登入</button>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="fs-sm">
+                  還沒有帳號？
+                </p>
+                <a href="../pages/register.html" class="fs-sm text-primary-200 text-decoration-underline">
+                  立即註冊
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.logo {
+    max-width: 152px;
+}
+
+.login-btn img{
+   max-width: 16px;
+   max-height: 16px; 
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap:8px;
+
+    &::before,
+    &::after {
+        content: "";
+        flex:1;
+        border-top: 1px solid $neutral-200;
+    }
+}
+
+.form-check-input {
+    background-color: $white;
+    &:checked {
+        background-color: $primary-300;
+        border-color: $white;
+    }
+}
+
+.logo-wrap {
+    width: 100%;
+    max-width: 351px;
+
+    @media(min-width: 416px) {
+        max-width: 416px;
+    }
+}

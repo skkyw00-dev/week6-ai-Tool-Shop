@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+      <div class="index-hero-bg">
+        <div class="container">
+          <div class="index-hero">
+            <h1 class="fs-2 display-lg-4 fw-bold mb-2 mb-lg-4">
+              探索適合你的 AI 工具
+            </h1>
+            <span class="d-block fs-2 display-lg-4 fw-bold mb-4 mb-lg-5">
+              讓工作與生活更有效率
+            </span>
+            <p class="text-neutral-200 mb-5 mb-lg-6 text-center">
+              從文字生成、圖片設計到程式輔助<br>
+              一站式探索並訂閱你需要的 AI 解決方案
+            </p>
+            <div class="position-relative">
+              <i
+                class="bi bi-search fs-6 text-neutral-300 position-absolute top-50 translate-middle-y index-control-icon "></i>
+              <input class="form-control index-control-input me-2 bg-white text-dark" type="search"
+                placeholder="輸入工具名稱、功能或關鍵字" aria-label="Search">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tool-category py-8 py-lg-9">
+        <div class="container-lg">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="fw-bold fs-3 fs-lg-2 mb-2">
+              工具分類
+            </h2>
+            <i class="bi bi-arrow-right-short fs-4 p-2"></i>
+          </div>
+          <p class="text-neutral-200 mb-5">
+            依據使用情境快速找到適合你的 AI 工具
+          </p>
+          <div class="row g-3 g-lg-4">
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6 bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-pen fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">內容生成</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  撰寫文章、行銷文案、腳本與摘要
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-image-fill fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">視覺設計</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  圖像生成、修圖、插畫與視覺輔助
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-camera-video fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">影像製作</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  影片生成、字幕、剪輯與語音轉換
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-code-slash fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">程式開發</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  程式碼生成、重構與除錯輔助
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-card-list fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">教育與學習</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  學習筆記、題目生成與教學支援
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-diagram-3 fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">生產力工具</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  任務管理、流程自動化與工作整合
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-music-note-beamed fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">音樂創作</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  音樂生成、編曲、混音與音效設計
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div
+                class="card p-5 p-lg-6  bg-white bg-opacity-8 border border-white border-opacity-12 text-center h-100">
+                <i class="bi bi-graph-up-arrow fs-4 mb-4"></i>
+                <h3 class="fs-6 fw-bold mb-1 fs-lg-5">資料分析</h3>
+                <p class="text-neutral-200 fs-sm fs-lg-6">
+                  數據整理、分析報告與洞察生成
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="monthly-picks py-8 py-lg-9">
+        <div class="container-lg">
+          <div class="mb-5">
+            <h2 class="fw-bold fs-3 fs-lg-2 mb-2">
+              本月精選
+            </h2>
+            <p class="text-neutral-200">
+              不知道從哪裡開始？先看看編輯為你精選的熱門工具
+            </p>
+          </div>
+          <div class="row g-4 g-lg-5 flex-nowrap overflow-x-auto flex-lg-wrap overflow-x-lg-visible">
+            <div class="col-9 col-lg-4 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  1
+                </span>
+                <img src="../assets/images/PromptLab.png" alt="PromptLab" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    PromptLab
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    內容生成
+                  </span>
+                  <p>
+                    協助你建立、整理不同的 AI Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt 組合。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  2
+                </span>
+                <img src="../assets/images/VoiceNova.png" alt="VoiceNova" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    VoiceNova
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    音樂創作
+                  </span>
+                  <p>
+                    能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast 或產品展示內容。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  3
+                </span>
+                <img src="../assets/images/DesignQuick.png" alt="DesignQuick" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    DesignQuick
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    影像製作
+                  </span>
+                  <p>
+                    讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  4
+                </span>
+                <img src="../assets/images/SEO Radar.png" alt="SEO Radar" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    SEO Radar
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    資料分析
+                  </span>
+                  <p>
+                    持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  5
+                </span>
+                <img src="../assets/images/Meeting Notes AI.png" alt="Meeting Notes AI" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    Meeting Notes AI
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    生產力工具
+                  </span>
+                  <p>
+                    將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 col-lg-6">
+              <div
+                class="card px-5 py-4 px-lg-6 py-lg-5 d-flex flex-lg-row align-items-start align-items-lg-center h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <span class="fw-bold fs-5 mb-4 mb-lg-0 me-lg-6">
+                  6
+                </span>
+                <img src="../assets/images/ChatFlow Builder.png" alt="ChatFlow Builder" class="mb-4 mb-lg-0 me-lg-6">
+                <div>
+                  <h4 class="fw-bold fs-5 fs-lg-4 mb-1">
+                    ChatFlow Builder
+                  </h4>
+                  <span class="text-neutral-200 mb-2">
+                    程式開發
+                  </span>
+                  <p>
+                    讓你無需撰寫程式碼，也能建立客服或內部使用的 AI 聊天流程，適合需要快速部署對話型工具的團隊。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="new-arrivals py-8 py-lg-9">
+        <div class="container-lg">
+          <div class="text-center mb-5">
+            <h2 class="fs-3 fs-lg-2 fw-bold">
+              最新上架
+            </h2>
+            <p class="text-neutral-200">
+              看看大家最近都在關注哪些新工具
+            </p>
+          </div>
+          <div class="row g-4 flex-nowrap flex-lg-wrap overflow-x-auto overflow-x-lg-visible">
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/WriteCraft AI.png" alt="WriteCraft AI" class="mb-4">
+                <h3 class="fs-5 fs-lg-4 fw-bold mb-1">
+                  WriteCraft AI
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  內容生成
+                </span>
+                <p>
+                  快速產出文案，從社群貼文、部落格文章到產品介紹，依不同目的生成合適內容。
+                </p>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/PixelMind Studio.png" alt="PixelMind Studio" class="mb-4">
+                <h3 class="fs-5 fw-bold mb-1">
+                  PixelMind Studio
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  影像製作
+                </span>
+                <p>
+                  只需輸入簡單描述，就能生成插畫、社群圖片與設計素材，適合缺乏設計資源的團隊或個人。
+                </p>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/CodePilot Pro.png" alt="CodePilot Pro" class="mb-4">
+                <h3 class="fs-5 fs-lg-4 fw-bold mb-1">
+                  CodePilot Pro
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  程式開發
+                </span>
+                <p>
+                  專為工程師設計的 AI 助手，協助產生程式碼、解釋複雜邏輯，讓你專注在更高價值的開發工作。
+                </p>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/VideoFlow AI.png" alt="VideoFlow AI" class="mb-4">
+                <h3 class="fs-5 fs-lg-4 fw-bold mb-1">
+                  VideoFlow AI
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  影像製作
+                </span>
+                <p>
+                  將文章或腳本轉換為影片，自動搭配畫面、字幕與音樂，適合快節奏的創作者或行銷團隊。
+                </p>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/InsightX Analyzer.png" alt="InsightX Analyzer" class="mb-4">
+                <h3 class="fs-5 fs-lg-4 fw-bold mb-1">
+                  InsightX Analyzer
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  資料分析
+                </span>
+                <p>
+                  快速整理資料、產出圖表與分析摘要，幫助你從複雜數據中找出關鍵洞察。
+                </p>
+              </div>
+            </div>
+            <div class="col-9 col-lg-4">
+              <div class="card p-4 p-lg-5 h-100 border border-white border-opacity-12 bg-white bg-opacity-8 rounded">
+                <img src="../assets/images/AutoTasker.png" alt="AutoTasker" class="mb-4">
+                <h3 class="fs-5 fs-lg-4 fw-bold mb-1">
+                  AutoTasker
+                </h3>
+                <span class="text-neutral-200 mb-2">
+                  生產力工具
+                </span>
+                <p>
+                  串接多種工具來自動執行日常任務，減少人工操作錯誤，讓你把時間用在更重要的事情上。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="button"
+              class="btn btn-primary py-2 px-5 mt-5 offcanvas-login-link rounded-pill">查看更多新工具</button>
+          </div>
+        </div>
+      </div>
+      <div class="submit-tool py-8">
+        <div class="container-lg">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="mb-5 text-center">
+              <h2 class="fs-3 fs-lg-2 fw-bold mb-2">
+                上架你的 AI 工具
+              </h2>
+              <span class="text-neutral-200">
+                無論是小型的效率工具還是強大的生成式應用，歡迎和我們分享你的 AI 能量
+              </span>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 h-100">
+                <div class="p-4 p-lg-5 text-center">
+                  <img src="../assets/images/index-bg/index-income.png" alt="income" class="mb-2">
+                  <h3 class="fs-5 fs-lg-4 fw-bold mb-2">
+                    建立多元化的副業收入
+                  </h3>
+                  <p class="text-neutral-200">
+                    透過靈活的訂閱制與分潤機制，讓您的程式碼在睡覺時也能為您創造價值。我們提供完善的支付金流對接，讓獲利變得簡單透明。
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 h-100">
+                <div class="p-4 p-lg-5 text-center">
+                  <img src="../assets/images/index-exposure.png" alt="exposure" class="mb-2">
+                  <h3 class="fs-5 fs-lg-4 fw-bold mb-2">
+                    獲得精準的流量支援
+                  </h3>
+                  <p class="text-neutral-200">
+                    無需再煩惱行銷推廣！我們的平台每日有數萬名 AI 愛好者尋求新工具，上架即刻獲得高曝光率，讓您的作品精準觸及目標受眾。
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 h-100">
+                <div class="p-4 p-lg-5 text-center">
+                  <img src="../assets/images/index-Community.png" alt="Community" class="mb-2">
+                  <h3 class="fs-5 fs-lg-4 fw-bold mb-2">
+                    加入開發者創作社群
+                  </h3>
+                  <p class="text-neutral-200">
+                    獲取最真實的使用者回饋與數據分析，幫助您持續迭代產品。在這裡，您可以與全球頂尖的 AI 開發者交流，共同定義未來的 AI 應用生態。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="button"
+                class="btn btn-primary py-2 px-5 mt-5 offcanvas-login-link rounded-pill">立即上架</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq py-8 py-lg-9">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center mb-5">
+                <h2 class="fs-3 fs-lg-2 fw-bold">
+                  常見問題
+                </h2>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-white border-bottom border-white border-opacity-12 p-4"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      AI ToolVerse 是什麼？
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show p-4" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">這是一個 AI 工具商店與探索平台，協助使用者快速找到、比較並使用各種 AI 工具。
+                        你可以依照不同用途瀏覽工具，也可以訂閱單一工具來實際使用，或是將自己開發的 AI 工具上架，讓更多人發現。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button text-white border-bottom border-white border-opacity-12 p-4 collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      這裡的 AI 工具都是免費的嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse p-4" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">平台上的 AI 工具由不同創作者提供，可能包含免費或付費的方案。
+                        你可以在每個工具的頁面中查看詳細的定價與功能差異，選擇最適合你的方案。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button text-white border-bottom border-white border-opacity-12 p-4 collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      訂閱 AI 工具後，我可以做什麼？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse p-4" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">訂閱後，你可以依照該工具提供的功能開始使用，例如生成內容、設計圖片、分析資料或進行自動化任務等。
+                        部分工具也提供下載或線上使用方式，讓你可以立即開始體驗 AI 帶來的效率提升。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button text-white border-bottom border-white border-opacity-12 p-4 collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                      aria-controls="collapseFour">
+                      我可以同時訂閱多個 AI 工具嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse p-4" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">可以。 你可以依照需求訂閱多個不同的 AI 工具，每個工具都是獨立訂閱，不會互相影響。 你可以自由組合適合自己的 AI 工具組合。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button text-white border-bottom border-white border-opacity-12 p-4 collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                      aria-controls="collapseFive">
+                      如果我不想繼續使用某個工具，可以取消訂閱嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse p-4" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">可以。 你可以隨時在會員中心管理你的訂閱，並取消不需要的工具。
+                        取消後，通常會在當前訂閱週期結束後停止服務，實際規則依各工具的方案設定為準。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button
+                      class="accordion-button text-white border-bottom border-white border-opacity-12 p-4 collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                      aria-controls="collapseSix">
+                      誰可以在這裡上架 AI 工具？
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse p-4" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong class="text-neutral-200">任何擁有 AI 工具或服務的創作者都可以申請上架。
+                        無論你是獨立開發者、團隊，或是正在測試產品市場，都可以透過平台曝光你的工具，並開始累積使用者與收入。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

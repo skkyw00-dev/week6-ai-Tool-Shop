@@ -1,0 +1,121 @@
+.index-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 166px;
+  padding-bottom: 166px;
+
+  &-bg {
+    background-image: url("../assets/images/index-bg/index-hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.index-control-input {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 36px;
+  padding-left: 43px;
+}
+
+.index-control-icon {
+  left: 17px;
+}
+
+.tool-category {
+  background:
+    url("../assets/images/index-bg/index-tool-bg-dec.png"),
+    url("../assets/images/index-bg/index-tool-bg-mobile.png");
+  background-size: 760px 500px, cover;
+  background-position: right top, center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  backdrop-filter: blur(24px);
+}
+
+.monthly-picks {
+  background:
+    linear-gradient(#100C24, #110D2580),
+    url("../assets/images/index-bg/landing-highlight-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.new-arrivals {
+  background:
+    linear-gradient(#25245733, #110920),
+    url("../assets/images/index-bg/index-new-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img {
+    max-width: 64px;
+    max-height: 64px;
+  }
+}
+
+.submit-tool {
+  background-image:
+    linear-gradient(#7B5CA800, #9C84C04D),
+    url("../assets/images/index-bg/061401e6e94724277d2a9bc8a48a880949a7850d.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.accordion-item {
+  background-color: transparent;
+  backdrop-filter: blur(12px);
+}
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  background-color: rgba($white ,0.08);
+}
+
+.accordion-button {
+  background-color: rgba($white ,0.08);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba($white ,0.12);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+@media(min-width:992px) {
+  .index-hero {
+    padding-top: 239px;
+    padding-bottom: 239px;
+  }
+
+  .display-lg-4 {
+    font-size: 56px !important;
+  }
+
+  .index-control-input {
+    padding-right: 271px;
+  }
+
+  .tool-category {
+    background:
+      url("../assets/images/index-bg/index-tool-bg-dec.png"),
+      url("../assets/images/index-bg/index-tool-bg.png");
+    background-size: 760px 500px, cover;
+    background-position: right top, center;
+    background-repeat: no-repeat;
+  }
+}

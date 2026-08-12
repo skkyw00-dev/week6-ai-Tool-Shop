@@ -1,0 +1,9 @@
+.register-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    @media(min-width:992px) {
+        padding-top: 120px;
+        padding-bottom: 137px;
+    }
+}

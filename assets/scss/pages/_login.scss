@@ -1,0 +1,36 @@
+.login-container {
+    padding-top: 32px;
+    padding-bottom: 71px;
+
+    @media(min-width: 992px) {
+        padding-top: 120px;
+        padding-bottom: 231px;
+    }
+}
+
+.login-input .form-control {
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+    padding-right: 17px !important;
+    padding-left: 17px !important;
+    color: $dark;
+
+    &::placeholder {
+        color: $neutral-300;
+    }
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    color: $dark;
+}
