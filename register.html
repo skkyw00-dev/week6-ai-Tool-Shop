@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>註冊</title>
+  <script type="module" crossorigin src="/week6-ai-Tool-Shop/assets/main-CasfZaQv.js"></script>
+  <link rel="stylesheet" crossorigin href="/week6-ai-Tool-Shop/assets/main-BjvKILYa.css">
+</head>
+
+<body>
+  <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="../pages/index.html">
+                <img src="/week6-ai-Tool-Shop/assets/Logo-BVlqBbcd.png" alt="Logo" class="logo me-5">
+            </a>
+            <div class="ms-auto d-flex justify-content-center align-items-center">
+                <button class="navbar-toggler p-2 border-0 me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-search fs-4"></i>
+                </button>
+                <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="dropdown me-4 d-none d-lg-block">
+                <button class="btn btn-secondary bg-transparent border-0" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    探索 AI 工具
+                    <i class="bi bi-chevron-down ms-2"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-dark p-2 bg-white bg-opacity-8 border border-white border-opacity-12 border-radius"
+                    aria-labelledby="dropdownMenuButton2">
+                    <div>
+                        <a class="dropdown-item active p-2" href="#">內容生成</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">視覺設計</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">影像製作</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">程式開發</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">教育與學習</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">資料分析</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">生產力工具</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">音樂創作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative d-none d-lg-block">
+                <i class="bi bi-search fs-6 text-neutral-300 position-absolute top-50 translate-middle-y navbar-control-icon"></i>
+                <input class="form-control me-2 bg-white text-dark" 
+                    type="search" 
+                    placeholder="輸入工具名稱、功能或關鍵字"
+                    aria-label="Search">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="item bg-white bg-opacity-8 border border-white border-opacity-12 p-3 mt-3 d-lg-none d-flex nav-search-container">
+                    <div class="position-relative flex-grow-1">
+                        <i class="bi bi-search fs-6 text-neutral-300 position-absolute top-50 translate-middle-y navbar-control-icon "></i>
+                        <input class="form-control me-2 bg-white text-dark" 
+                            type="search" 
+                            placeholder="輸入工具名稱、功能或關鍵字"
+                            aria-label="Search">
+                    </div>
+                    <button type="button" 
+                        class="btn-close btn-close-white p-2" 
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    </button>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end p-5 bg-white bg-opacity-8 border border-white border-opacity-12 d-lg-none"
+                tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header mb-4 p-0">
+                    <button type="button" class="btn-close btn-close-white p-2" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="navbar-nav d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <div class="border-bottom border-white border-opacity-12 mb-2">
+                            <p class="h6 text-white p-3">探索 AI 工具</p>
+                        </div>
+                        <div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">內容生成</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">視覺設計</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">影像製作</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">程式開發</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">教育與學習</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">資料分析</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">生產力工具</a>
+                            </div>
+                            <div>
+                                <a class="nav-link p-2" href="#">音樂創作</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="../pages/login.html" class="bg-primary offcanvas-login-link rounded-pill text-black">
+                            登入/註冊
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="../pages/login.html" class="p-2 d-none d-lg-block">
+                    登入/註冊
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>    
+    <main class="register-container">
+      <div class="container-lg">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="logo-wrap">
+            <div class="text-center mb-6">
+              <h1 class="fs-3 fs-lg-2 fw-bold mb-2">
+                歡迎加入 AI ToolVerse
+              </h1>
+              <p class="fs-lg-5 text-neutral-200">
+                立即建立帳號，開始探索 AI 工具
+              </p>
+            </div>
+            <div class="login-btn d-flex flex-column flex-grow-1 mb-6">
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100 mb-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAidJREFUeAHdVT1vE0EQfXtOhIsU7sBAcS5BIjhpEAXEVyKBcv4BSI74ATFNoEtSIGEasEQHko9f4ENIiM42IEEFIQ1lVgrokBsi4aTAspd3hx3fp4ONKMiT1jua2Xlvbm5uDfzvEOOCqoAMeijRXOLJPBT0QdYWbUnruXgDayoBdQUmtxpXBuMhuTaThGIF1FU8ZIVlTIbbFHkUdmox5OtTkEukYMcFAgJsS4nkG6Eze/RtchmsULiL72WB/mc+ckM0vVZFEGiRWkvt4F1PD1WWmMwh8M4mxQMC6nWa1asaPvSABtd3BZLnxiX/CXwtUsvetpgCbs0CZzTrb8ldjJ6gdeIjt/xhpD+zIIz9rXBCdm1b4WhI58F8zjX8LzkfUI4hnwD60NDwj+EXkP6AaqQLmB5yaMwcun7fL7prvv95Ek8OzheAV81wJnsb+fpP39muKeXdWQMu9Wlo+p+g5f48PTiHe51FtPvpVbNu6jgCp+5+1gPkhBLCHtU9dDaQqexf2nnbzWZ8QcmhNeyiLZPIRb/bgO+lsnrpVC7mIgIubtRNkzNYDxPxkMVPr/qyaHuTdb1uFrgt0V/++sXIOLvGqHoNK9/uz1uxAoNk90ZcxQRoO5exK6+RTVSdyoVyqLgoKLLBbR0ToNM5W23efBy5hRP/cNiukiui/P2NgXBvW2DlRdG2E+Lj4QkJLM+hm/+hZnXXR1GpcayzWqfV7s1ZHII9HFv8AgU8tsToDdwfAAAAAElFTkSuQmCC" alt="login-google">
+                使用 Google 繼續
+              </button>
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100 mb-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAVRJREFUeAHtVs1LAlEQn7VIqPZmUB1KDxGBF/8B6VYdPNUh+gvq2rWuda8OdQkPQQRSVz2G0a0IliL8AFdBV/Dj4ioo+DHz8AnLU9B1F0T8we7Oznv7fju/N8M8CbrYPb53g4V4fzlT6SnRzX/ykGoDuMFaqB/Ppx6J/rzpkFJgA+ZabY8DbMY8mIS85ISjfS9sbbpgeXGB+cLRGF7x8QnWVmR4vD7EhZ0Gv1aoCASmJLq5CAiLD8LIEZAkqxgBRzJdglBEYbZW0Mcn4Hpz3D19ws+/NnC+7Vk0GWlKmt9eBvqOXZ3vgV5rMDsUVnA/fkcnYCQuua+fsolnVL4obrKlEunVuuAbKgL6MPj6xWyS68C/3Ruj6s1jgRESmbJJAtQ4+PbNbN/OuoEgggTTnaYzggkgoO6PnV8F66HS2qwOotj9hz22KH9Zw7vPu4G+nDCPH1s6qAFmUhbLZSEAAAAASUVORK5CYII=" alt="login-facebook">
+                使用 Facebook 繼續
+              </button>
+              <button type="button" class="btn btn-outline-light py-2 text-primary-100">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAABCcAAAQnAEmzTo0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAPhJREFUeAHNlY0NgjAQhV+dgBFwAt3AjsAIbqAbyAa6AXEDN6hOgE4gG+gG5xGqVFJKbSHxS14I3HHv+pcC/woRrVmKlWNsuOieWjKMie78zR1jw0XLybrXBqRNpE++cBRK+VF3uGDdWCchRKW/P3VspdM/cXh2aS6iiWIVrEdPfBdT3BfpKi4pju1Q9wWFU9hqzjrvS4RztH0UnREQwpnbdtEME9M1qBBO5mNwRTgbnuFkyOCCcFKWouak26mDFE/ZOwK9C86Iwz3NFH+aUwzBSQcKI4cPnJjQ98Xig8IvULPgpomi5rqU1F74ZixBCNoocYw0df3/AlgjleKm550CAAAAAElFTkSuQmCC" alt="login-apple">
+                使用 Apple 繼續
+              </button>
+            </div>
+            <p class="divider text-neutral-200 fs-sm mb-6">
+              或使用 AI ToolVerse 帳號登入
+            </p>
+            <div>
+              <div class="login-input mb-3">
+                <label for="userEmail" class="form-label mb-1">電子信箱</label>
+                <input type="email"
+                  class="form-control text-dark bg-white border border-white border-opacity-12 rounded-3" id="userEmail"
+                  placeholder="請輸入電子信箱">
+              </div>
+
+              <div class="login-input mb-2">
+                <label for="password" class="form-label">密碼</label>
+                <div class="position-relative">
+                  <input 
+                    type="password" 
+                    class="form-control text-dark bg-white border border-white border-opacity-12 rounded-3" 
+                    id="password" value="" 
+                    placeholder="請輸入密碼">
+                  <button type="button" class="password-toggle d-none">
+                    <i class="bi bi-eye-slash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="login-input mb-2">
+                <label for="confirmPassword" class="form-label">確認密碼</label>
+                <div class="position-relative">
+                  <input 
+                    type="password" 
+                    class="form-control text-dark bg-white border border-white border-opacity-12 rounded-3" 
+                    id="confirmPassword" value="" 
+                    placeholder="請再次輸入密碼">
+                  <button type="button" class="password-toggle d-none">
+                    <i class="bi bi-eye-slash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="mb-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="fs-sm form-check-label text-neutral-200" for="flexCheckDefault">
+                    我同意 
+                    <a href="#" class="fs-sm text-primary-200 text-decoration-underline">
+                      服務條款
+                    </a>
+                    與 
+                    <a href="#" class="fs-sm text-primary-200 text-decoration-underline">
+                      隱私政策
+                    </a>
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-grow-1 mb-6">
+                <button class="btn btn-primary rounded-pill text-dark" type="submit">建立帳號</button>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="fs-sm">
+                  已經有帳號了？
+                </p>
+                <a href="../pages/login.html" class="fs-sm text-primary-200 text-decoration-underline">
+                  立即登入
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+</body>
+
+</html>
