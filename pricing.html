@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>訂閱方案定價頁</title>
+  <script type="module" crossorigin src="/week6-ai-Tool-Shop/assets/main-oN8A-q5p.js"></script>
+  <link rel="stylesheet" crossorigin href="/week6-ai-Tool-Shop/assets/main-Cl86HxVE.css">
+</head>
+
+<body>
+    <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="/week6-ai-Tool-Shop/assets/Logo-BVlqBbcd.png" alt="Logo" class="logo me-5">
+            </a>
+            <div class="ms-auto d-flex justify-content-center align-items-center">
+                <button class="navbar-toggler p-2 border-0 me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-search fs-4"></i>
+                </button>
+                <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="dropdown me-4 d-none d-lg-block">
+                <button class="btn btn-secondary bg-transparent border-0" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    探索 AI 工具
+                    <i class="bi bi-chevron-down ms-2"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-dark p-2 bg-white bg-opacity-8 border border-white border-opacity-12 border-radius"
+                    aria-labelledby="dropdownMenuButton2">
+                    <div>
+                        <a class="dropdown-item active p-2" href="#">內容生成</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">視覺設計</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">影像製作</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">程式開發</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">教育與學習</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">資料分析</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">生產力工具</a>
+                    </div>
+                    <div>
+                        <a class="dropdown-item p-2" href="#">音樂創作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative d-none d-lg-block">
+                <i class="bi bi-search fs-6 text-neutral-300 position-absolute top-50 translate-middle-y navbar-control-icon"></i>
+                <input class="form-control me-2 bg-white text-dark" 
+                    type="search" 
+                    placeholder="輸入工具名稱、功能或關鍵字"
+                    aria-label="Search">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="item bg-white bg-opacity-8 border border-white border-opacity-12 p-3 mt-3 d-lg-none d-flex nav-search-container">
+                    <div class="position-relative flex-grow-1">
+                        <i class="bi bi-search fs-6 text-neutral-300 position-absolute top-50 translate-middle-y navbar-control-icon "></i>
+                        <input class="form-control me-2 bg-white text-dark" 
+                            type="search" 
+                            placeholder="輸入工具名稱、功能或關鍵字"
+                            aria-label="Search">
+                    </div>
+                    <button type="button" 
+                        class="btn-close btn-close-white p-2" 
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    </button>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end p-5 bg-white bg-opacity-8 border border-white border-opacity-12 d-lg-none"
+                tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header mb-4 p-0">
+                    <button type="button" class="btn-close btn-close-white p-2" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    </button>
+                </div>
+                <div class="navbar-nav d-flex flex-column justify-content-between flex-grow-1">
+                    <div>
+                        <div class="border-bottom border-white border-opacity-12 mb-2">
+                            <p class="h6 text-white p-3">探索 AI 工具</p>
+                        </div>
+                        <div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">內容生成</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">視覺設計</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">影像製作</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">程式開發</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">教育與學習</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">資料分析</a>
+                            </div>
+                            <div class="mb-2">
+                                <a class="nav-link p-2" href="#">生產力工具</a>
+                            </div>
+                            <div>
+                                <a class="nav-link p-2" href="#">音樂創作</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="login.html" class="bg-primary offcanvas-login-link rounded-pill text-black">
+                            登入/註冊
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="login.html" class="p-2 d-none d-lg-block">
+                    登入/註冊
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+        <main class="container-lg">
+            <div class="py-6 py-lg-8">
+                <div class="ms-3 mb-5">
+                    <a href="index.html">
+                        <i class="bi bi-chevron-left me-2 py-2"></i>返回上頁
+                    </a>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="mb-4 text-center">
+                        <h1 class="fs-3 fw-bold mb-2 fs-md-2">
+                            選擇適合你的方案
+                        </h1>
+                        <p class="text-neutral-200">
+                            訂閱 WriteCraft AI，開始使用 AI 協助你撰寫文章、社群內容與行銷文案
+                        </p>
+                    </div>
+                    <div class="mb-3" id="nav-tab" role="tablist">
+                        <button type="button" class="btn border border-primary me-3 py-2 px-5 rounded-pill active"
+                            id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home">月繳</button>
+                        <button type="button" class="btn border border-primary py-2 px-5 rounded-pill"
+                            id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile">年繳</button>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">免費方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">0</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合剛開始嘗試 AI 寫作工具的使用者，用來快速產生靈感、簡短內容或社群貼文
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li class="text-white-50">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div
+                                        class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">基礎方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">300</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合經常需要撰寫內容的創作者、行銷人員與自由工作者
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li class="text-white-50">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div
+                                        class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">免費方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">800</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合團隊或需要大量生成內容的專業使用者
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div
+                                        class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">免費方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">0</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合剛開始嘗試 AI 寫作工具的使用者，用來快速產生靈感、簡短內容或社群貼文
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li class="text-white-50">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div
+                                        class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">基礎方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">1,200</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合經常需要撰寫內容的創作者、行銷人員與自由工作者
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="text-white-50 mb-2">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li class="text-white-50">
+                                                <i class="bi bi-x fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <div
+                                        class="card d-flex flex-column h-100 p-5">
+                                        <span class="badge bg-white bg-opacity-8 rounded-3 fs-sm mb-4">免費方案</span>
+                                        <div class="mb-4 d-flex flex-row align-items-end gap-2">
+                                            <div>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">NT $</span>
+                                                <span class="fw-bold fs-3 fs-md-2 lh-sm price">2,400</span>
+                                            </div>
+                                            <span>/ 年</span>
+                                        </div>
+                                        <p class="text-neutral-200 mb-4">
+                                            適合團隊或需要大量生成內容的專業使用者
+                                        </p>
+                                        <ul class="list-unstyled mb-5">
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>每月 20 次 AI 生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基本 Prompt 模板</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>短內容生成（社群貼文、簡短文案）</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>基礎 AI 優化建議</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>長文章生成</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>多語言寫作支援</span>
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>進階寫作模板</span>
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-check2 fs-4"></i>
+                                                <span>團隊成員共享工作區</span>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-primary mt-auto subscription">我要訂閱</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-neutral-500 py-8">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between mb-6">
+            <div class="mb-5">
+                <img src="/week6-ai-Tool-Shop/assets/Logo-BVlqBbcd.png" alt="Logo" class="logo">
+            </div>
+            <div>
+                <p class="text-white fw-normal mb-2">
+                    訂閱我們，掌握最新 AI 工具與趨勢
+                </p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control py-2 px-4 bg-white rounded-start-3" placeholder="helloworld@gmail.com"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    
+                    <a href="pricing.html" class="btn btn-outline-secondary bg-primary text-dark border-white border-opacity-12" id="button-addon2">
+                        訂閱
+                    </a>
+                    <!-- <button class="btn btn-outline-secondary bg-primary text-dark border-white border-opacity-12" type="button"
+                        id="button-addon2">訂閱</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 text-center text-neutral-200 border-top border-white border-opacity-12">
+            <p class="mb-1 fs-sm">Copyright ©2026 AI ToolVerse</p>
+            <p class="fs-sm">Tool logos by BRIX Templates, modified from original, licensed under CC BY 4.0</p>
+        </div>
+    </div>
+</footer>            
+</body>
+
+</html>
